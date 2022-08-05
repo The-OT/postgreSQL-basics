@@ -11,3 +11,5 @@
 - DEFAULT is the basic value that will be added
 
 - concatenate string using ||
+
+- UPDATE, DELETE, etc..

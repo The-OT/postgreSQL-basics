@@ -12,8 +12,8 @@
 /* This will insert the values in the table, according to the given fields */
 
 -- INSERT INTO students 
--- (first_name, last_name, age, address)
--- VALUES ('Shyame', 'Goru', 19, 'BRT');
+-- (roll_no, first_name, last_name, age, address)
+-- VALUES ('2','Rame', 'Baje', 18, 'POK');
 
 -- INSERT INTO students 
 -- (roll_no, first_name, last_name, age, address)
@@ -26,11 +26,28 @@
 -- ADD COLUMN address text; 
 
 
-UPDATE students
-set age = age + 3, 
-    first_name = 'Gyani',
-    last_name = 'Baje'
-WHERE roll_no = 2;
+-- UPDATE students
+-- set age = age + 3, 
+--     first_name = 'Gyani',
+--     last_name = 'Baje'
+-- WHERE roll_no = 2;
 
-SELECT * FROM students WHERE roll_no IN (1,2); --conditions can be added
+-- DELETE FROM students
+-- WHERE last_name = 'Baje';
+
+
+SELECT * FROM students ; --conditions can be added
+
+-- CREATE TABLE subjects (
+--     id int REFERENCES students(roll_no) NOT NULL,
+--     physics int,
+--     chemistry int,
+--     maths int,
+--     computer int
+-- );
+
+-- INSERT INTO subjects ( id, physics, chemistry, maths, computer)
+-- VALUES (1, 12, 13, 14, 15), (2, 15, 16, 10, 20);
+
+SELECT * from subjects ;
 
