@@ -13,3 +13,5 @@
 - concatenate string using ||
 
 - UPDATE, DELETE, etc..
+
+- Multiple values can be intered by `INSERT INTO`, just pass the values in `()` seperated by comma..
