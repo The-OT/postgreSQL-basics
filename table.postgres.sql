@@ -8,14 +8,6 @@
 --     address text    
 -- );
 
--- serial means that the value will be generated automatically and increased automatically
-
--- PRIMARY KEY is unique identification
-
--- NOT NULL is used when any value MUST be entered
-
--- DEFAULT is the basic value that will be added
-
 
 /* This will insert the values in the table, according to the given fields */
 
@@ -33,5 +25,12 @@
 -- ALTER table students 
 -- ADD COLUMN address text; 
 
-SELECT * FROM students;
+
+UPDATE students
+set age = age + 3, 
+    first_name = 'Gyani',
+    last_name = 'Baje'
+WHERE roll_no = 2;
+
+SELECT * FROM students WHERE roll_no IN (1,2); --conditions can be added
 
